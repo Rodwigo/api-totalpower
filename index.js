@@ -1,15 +1,18 @@
+const { application } = require('express');
 const express = require('express');
 const server = express();
 const filmes = require('./src/data/filmes.json')
 
-server.get('/usuario', (req,res) => {
+const PORT = process.env.PORT || 8877;
+
+server.listen(PORT, () => {
+    console.log('Escutando na porta: ' + PORT);
+})
+
+server.get('/', (req,res) => {
     return res.json({usuario: 'Rodrigo'})
 })
 
-server.get('/testando', (req,res) => {
+server.get('/filmes', (req,res) => {
     return res.json({filmes})
 })
-
-server.listen(3000, () => {
-    console.log("Sucesso!")
-});
