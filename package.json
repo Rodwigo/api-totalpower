@@ -1,7 +1,6 @@
 {
   "name": "backendapitest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index.js",
@@ -11,5 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodwigo/api-totalpower.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rodwigo/api-totalpower/issues"
+  },
+  "homepage": "https://github.com/Rodwigo/api-totalpower#readme",
+  "description": ""
 }
